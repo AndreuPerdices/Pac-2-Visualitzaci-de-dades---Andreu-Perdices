@@ -1,0 +1,1659 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='PAC2VDIsotypeChart' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ciberseguridad' inline='true' name='federated.1plril6127yh1216qshl30ggvtze' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ciberseguridad' name='textscan.1ig2rim1vrtzt61gi5nlb1oh1yle'>
+            <connection class='textscan' directory='C:/Users/aperd/Downloads' filename='ciberseguridad.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ig2rim1vrtzt61gi5nlb1oh1yle' name='ciberseguridad.csv' table='[ciberseguridad#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_GB' separator=';'>
+            <column datatype='string' name='CCAA' ordinal='0' />
+            <column datatype='string' name='Ciudad' ordinal='1' />
+            <column datatype='string' name='Universidad' ordinal='2' />
+            <column datatype='string' name='Grupo' ordinal='3' />
+            <column datatype='string' name='URL grupo' ordinal='4' />
+            <column datatype='string' name='Nombre y Apellidos' ordinal='5' />
+            <column datatype='string' name='Posición' ordinal='6' />
+            <column datatype='string' name='Afiliación' ordinal='7' />
+            <column datatype='integer' name='Genero' ordinal='8' />
+            <column datatype='integer' name='Año de la primera publicación' ordinal='9' />
+            <column datatype='integer' name='Documentos por autor (1er tema al que más ha contribuido) en Scopus' ordinal='10' />
+            <column datatype='string' name='1er tema al que el autor ha contribuido más en Scopus entre 2017–2021' ordinal='11' />
+            <column datatype='string' name='Impacto de las citas ponderado por 1er tema' ordinal='12' />
+            <column datatype='integer' name='Documentos por autor (2do tema al que más ha contribuido) en Scopus' ordinal='13' />
+            <column datatype='string' name='2do tema al que el autor ha contribuido más en Scopus entre 2017–2021' ordinal='14' />
+            <column datatype='string' name='Impacto de las citas ponderado por 2do tema' ordinal='15' />
+            <column datatype='integer' name='ScopusID' ordinal='16' />
+            <column datatype='string' name='ScopusID URL' ordinal='17' />
+            <column datatype='string' name='WOS ResearcherID' ordinal='18' />
+            <column datatype='string' name='Orcid' ordinal='19' />
+            <column datatype='string' name='GoogleScholar' ordinal='20' />
+            <column datatype='integer' name='Balz' ordinal='21' />
+            <column datatype='integer' name='Citaciones GS' ordinal='22' />
+            <column datatype='integer' name='h-index GS' ordinal='23' />
+            <column datatype='integer' name='i10-index GS' ordinal='24' />
+            <column datatype='integer' name='Citaciones desde 2018 GS' ordinal='25' />
+            <column datatype='integer' name='h-index desde 2018 GS' ordinal='26' />
+            <column datatype='integer' name='i10-index desde 2018' ordinal='27' />
+            <column datatype='integer' name='Citaciones Scopus' ordinal='28' />
+            <column datatype='integer' name='Documentos citados Scopus' ordinal='29' />
+            <column datatype='integer' name='h-index Scopus' ordinal='30' />
+            <column datatype='integer' name='Numero de documentos Scopus' ordinal='31' />
+            <column datatype='integer' name='co-autores Scopus' ordinal='32' />
+            <column datatype='integer' name='Scopus tot citations / tot coauthors' ordinal='33' />
+            <column datatype='string' name='Mean H-index Scopus-Google' ordinal='34' />
+            <column datatype='string' name='Mean citations Scopus-Google' ordinal='35' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CCAA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CCAA]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>CCAA</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ciudad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ciudad]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Ciudad</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Universidad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Universidad]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Universidad</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grupo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Grupo]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Grupo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>URL grupo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[URL grupo]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>URL grupo</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre y Apellidos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nombre y Apellidos]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Nombre y Apellidos</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Posición</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Posición]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Posición</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Afiliación</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Afiliación]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Afiliación</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genero</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Genero]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Genero</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Año de la primera publicación</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Año de la primera publicación]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Año de la primera publicación</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Documentos por autor (1er tema al que más ha contribuido) en Scopus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Documentos por autor (1er tema al que más ha contribuido) en Scopus]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Documentos por autor (1er tema al que más ha contribuido) en Scopus</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1er tema al que el autor ha contribuido más en Scopus entre 2017–2021</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[1er tema al que el autor ha contribuido más en Scopus entre 2017–2021]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>1er tema al que el autor ha contribuido más en Scopus entre 2017–2021</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Impacto de las citas ponderado por 1er tema</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Impacto de las citas ponderado por 1er tema]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Impacto de las citas ponderado por 1er tema</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Documentos por autor (2do tema al que más ha contribuido) en Scopus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Documentos por autor (2do tema al que más ha contribuido) en Scopus]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Documentos por autor (2do tema al que más ha contribuido) en Scopus</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2do tema al que el autor ha contribuido más en Scopus entre 2017–2021</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[2do tema al que el autor ha contribuido más en Scopus entre 2017–2021]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>2do tema al que el autor ha contribuido más en Scopus entre 2017–2021</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Impacto de las citas ponderado por 2do tema</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Impacto de las citas ponderado por 2do tema]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Impacto de las citas ponderado por 2do tema</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ScopusID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ScopusID]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>ScopusID</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ScopusID URL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ScopusID URL]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>ScopusID URL</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WOS ResearcherID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WOS ResearcherID]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>WOS ResearcherID</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Orcid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Orcid]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Orcid</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GoogleScholar</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GoogleScholar]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>GoogleScholar</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balz</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Balz]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Balz</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Citaciones GS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Citaciones GS]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Citaciones GS</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>h-index GS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[h-index GS]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>h-index GS</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>i10-index GS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[i10-index GS]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>i10-index GS</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Citaciones desde 2018 GS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Citaciones desde 2018 GS]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Citaciones desde 2018 GS</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>h-index desde 2018 GS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[h-index desde 2018 GS]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>h-index desde 2018 GS</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>i10-index desde 2018</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[i10-index desde 2018]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>i10-index desde 2018</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Citaciones Scopus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Citaciones Scopus]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Citaciones Scopus</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Documentos citados Scopus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Documentos citados Scopus]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Documentos citados Scopus</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>h-index Scopus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[h-index Scopus]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>h-index Scopus</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Numero de documentos Scopus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Numero de documentos Scopus]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Numero de documentos Scopus</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co-autores Scopus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co-autores Scopus]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>co-autores Scopus</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Scopus tot citations / tot coauthors</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Scopus tot citations / tot coauthors]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Scopus tot citations / tot coauthors</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean H-index Scopus-Google</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mean H-index Scopus-Google]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Mean H-index Scopus-Google</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean citations Scopus-Google</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mean citations Scopus-Google]</local-name>
+            <parent-name>[ciberseguridad.csv]</parent-name>
+            <remote-alias>Mean citations Scopus-Google</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ccaa' datatype='string' name='[CCAA]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Ciudad]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Google Scholar' datatype='string' name='[GoogleScholar]' role='dimension' type='nominal' />
+      <column caption='Scopus ID' datatype='integer' name='[ScopusID]' role='dimension' type='ordinal' />
+      <column caption='ciberseguridad.csv' datatype='table' name='[__tableau_internal_object_id__].[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]' role='measure' type='quantitative' />
+      <column caption='I10-Index Desde 2018' datatype='integer' name='[i10-index desde 2018]' role='measure' type='quantitative' />
+      <column-instance column='[Ciudad]' derivation='None' name='[none:Ciudad:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/aperd/AppData/Local/Temp/TableauTemp/#TableauTemp_07nwdbh1uw9n9j15pa5rs13o9a7v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/02/2024 08:46:08 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CCAA</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CCAA]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CCAA</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ciudad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ciudad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ciudad</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Universidad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Universidad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Universidad</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>88</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Grupo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Grupo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Grupo</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>URL grupo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[URL grupo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>URL grupo</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nombre y Apellidos</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nombre y Apellidos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nombre y Apellidos</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>349</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Posición</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Posición]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Posición</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Afiliación</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Afiliación]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Afiliación</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genero</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Genero]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genero</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Año de la primera publicación</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Año de la primera publicación]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Año de la primera publicación</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Documentos por autor (1er tema al que más ha contribuido) en Scopus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Documentos por autor (1er tema al que más ha contribuido) en Scopus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Documentos por autor (1er tema al que más ha contribuido) en Scopus</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>1er tema al que el autor ha contribuido más en Scopus entre 2017–2021</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[1er tema al que el autor ha contribuido más en Scopus entre 2017–2021]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>1er tema al que el autor ha contribuido más en Scopus entre 2017–2021</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>128</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Impacto de las citas ponderado por 1er tema</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Impacto de las citas ponderado por 1er tema]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Impacto de las citas ponderado por 1er tema</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Documentos por autor (2do tema al que más ha contribuido) en Scopus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Documentos por autor (2do tema al que más ha contribuido) en Scopus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Documentos por autor (2do tema al que más ha contribuido) en Scopus</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2do tema al que el autor ha contribuido más en Scopus entre 2017–2021</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[2do tema al que el autor ha contribuido más en Scopus entre 2017–2021]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2do tema al que el autor ha contribuido más en Scopus entre 2017–2021</remote-alias>
+              <ordinal>14</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>140</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Impacto de las citas ponderado por 2do tema</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Impacto de las citas ponderado por 2do tema]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Impacto de las citas ponderado por 2do tema</remote-alias>
+              <ordinal>15</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ScopusID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ScopusID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ScopusID</remote-alias>
+              <ordinal>16</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>433</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ScopusID URL</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ScopusID URL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ScopusID URL</remote-alias>
+              <ordinal>17</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>437</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WOS ResearcherID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[WOS ResearcherID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WOS ResearcherID</remote-alias>
+              <ordinal>18</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>346</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Orcid</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Orcid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Orcid</remote-alias>
+              <ordinal>19</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>333</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GoogleScholar</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GoogleScholar]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GoogleScholar</remote-alias>
+              <ordinal>20</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>288</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Balz</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Balz]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Balz</remote-alias>
+              <ordinal>21</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Citaciones GS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Citaciones GS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Citaciones GS</remote-alias>
+              <ordinal>22</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>253</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>h-index GS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[h-index GS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>h-index GS</remote-alias>
+              <ordinal>23</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>i10-index GS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[i10-index GS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>i10-index GS</remote-alias>
+              <ordinal>24</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Citaciones desde 2018 GS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Citaciones desde 2018 GS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Citaciones desde 2018 GS</remote-alias>
+              <ordinal>25</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>220</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>h-index desde 2018 GS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[h-index desde 2018 GS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>h-index desde 2018 GS</remote-alias>
+              <ordinal>26</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>i10-index desde 2018</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[i10-index desde 2018]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>i10-index desde 2018</remote-alias>
+              <ordinal>27</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Citaciones Scopus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Citaciones Scopus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Citaciones Scopus</remote-alias>
+              <ordinal>28</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>255</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Documentos citados Scopus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Documentos citados Scopus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Documentos citados Scopus</remote-alias>
+              <ordinal>29</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>204</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>h-index Scopus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[h-index Scopus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>h-index Scopus</remote-alias>
+              <ordinal>30</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Numero de documentos Scopus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Numero de documentos Scopus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Numero de documentos Scopus</remote-alias>
+              <ordinal>31</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>co-autores Scopus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[co-autores Scopus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>co-autores Scopus</remote-alias>
+              <ordinal>32</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Scopus tot citations / tot coauthors</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Scopus tot citations / tot coauthors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Scopus tot citations / tot coauthors</remote-alias>
+              <ordinal>33</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mean H-index Scopus-Google</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Mean H-index Scopus-Google]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mean H-index Scopus-Google</remote-alias>
+              <ordinal>34</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mean citations Scopus-Google</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Mean citations Scopus-Google]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mean citations Scopus-Google</remote-alias>
+              <ordinal>35</ordinal>
+              <family>ciberseguridad.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>282</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Ciudad:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Bilbao&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lovaina, Bélgica&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Santander&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;A Coruña&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Granada&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nueva York, EEUU&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ansbach, BavariaAlemania&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;León&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pozuelo de Alarcón, Madrid&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;California, EEUU&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Málaga&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tempe, Arizona&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bristol, UK&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Luxemburgo, Luxemburgo&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sevilla&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Badajoz&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lleida&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Quito, Ecuador&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Deusto&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Murcia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Wolfsburgo, Alemania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alcalá de Henares, Madrid&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lausana, Suiza&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Palma, Illes Balears&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ciudad Real&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Móstoles/Madrid&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Valladolid&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Barcelona&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Logroño&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Salamanca&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cambridge, Reino Unido&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mollerussa, Catalonia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Temuco, Chile&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Canterbury, Reino Unido&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mondragón&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tenerife&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Dallas, Texas&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mountain View, California&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Vigo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dresden, Alemania&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;New York, EEUU&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Zaragoza&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bruselas, Bélgica&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lyon, Francia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tallinn, Harjumaa, Estonia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bellaterra, Barcelona&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;London, Reino Unido&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;San Sebastián&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alemania&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Le Chesnay-Rocquencourt, Francia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Paris, Francia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cantoblanco, Madrid&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mondragón, Gipuzcua&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Valencia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Burgos&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Madrid&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tarragona&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alicante&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Leganés, Madrid&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;París, Francia&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='ciberseguridad.csv' id='ciberseguridad.csv_E70F05F9286E4F428883F23F8CE9BFF7'>
+            <properties context=''>
+              <relation connection='textscan.1ig2rim1vrtzt61gi5nlb1oh1yle' name='ciberseguridad.csv' table='[ciberseguridad#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_GB' separator=';'>
+                  <column datatype='string' name='CCAA' ordinal='0' />
+                  <column datatype='string' name='Ciudad' ordinal='1' />
+                  <column datatype='string' name='Universidad' ordinal='2' />
+                  <column datatype='string' name='Grupo' ordinal='3' />
+                  <column datatype='string' name='URL grupo' ordinal='4' />
+                  <column datatype='string' name='Nombre y Apellidos' ordinal='5' />
+                  <column datatype='string' name='Posición' ordinal='6' />
+                  <column datatype='string' name='Afiliación' ordinal='7' />
+                  <column datatype='integer' name='Genero' ordinal='8' />
+                  <column datatype='integer' name='Año de la primera publicación' ordinal='9' />
+                  <column datatype='integer' name='Documentos por autor (1er tema al que más ha contribuido) en Scopus' ordinal='10' />
+                  <column datatype='string' name='1er tema al que el autor ha contribuido más en Scopus entre 2017–2021' ordinal='11' />
+                  <column datatype='string' name='Impacto de las citas ponderado por 1er tema' ordinal='12' />
+                  <column datatype='integer' name='Documentos por autor (2do tema al que más ha contribuido) en Scopus' ordinal='13' />
+                  <column datatype='string' name='2do tema al que el autor ha contribuido más en Scopus entre 2017–2021' ordinal='14' />
+                  <column datatype='string' name='Impacto de las citas ponderado por 2do tema' ordinal='15' />
+                  <column datatype='integer' name='ScopusID' ordinal='16' />
+                  <column datatype='string' name='ScopusID URL' ordinal='17' />
+                  <column datatype='string' name='WOS ResearcherID' ordinal='18' />
+                  <column datatype='string' name='Orcid' ordinal='19' />
+                  <column datatype='string' name='GoogleScholar' ordinal='20' />
+                  <column datatype='integer' name='Balz' ordinal='21' />
+                  <column datatype='integer' name='Citaciones GS' ordinal='22' />
+                  <column datatype='integer' name='h-index GS' ordinal='23' />
+                  <column datatype='integer' name='i10-index GS' ordinal='24' />
+                  <column datatype='integer' name='Citaciones desde 2018 GS' ordinal='25' />
+                  <column datatype='integer' name='h-index desde 2018 GS' ordinal='26' />
+                  <column datatype='integer' name='i10-index desde 2018' ordinal='27' />
+                  <column datatype='integer' name='Citaciones Scopus' ordinal='28' />
+                  <column datatype='integer' name='Documentos citados Scopus' ordinal='29' />
+                  <column datatype='integer' name='h-index Scopus' ordinal='30' />
+                  <column datatype='integer' name='Numero de documentos Scopus' ordinal='31' />
+                  <column datatype='integer' name='co-autores Scopus' ordinal='32' />
+                  <column datatype='integer' name='Scopus tot citations / tot coauthors' ordinal='33' />
+                  <column datatype='string' name='Mean H-index Scopus-Google' ordinal='34' />
+                  <column datatype='string' name='Mean citations Scopus-Google' ordinal='35' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Isotype Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ciberseguridad' name='federated.1plril6127yh1216qshl30ggvtze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1plril6127yh1216qshl30ggvtze'>
+            <column caption='Ccaa' datatype='string' name='[CCAA]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ciudad]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Nombre y Apellidos]' role='dimension' type='nominal' />
+            <column-instance column='[CCAA]' derivation='None' name='[none:CCAA:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ciudad]' derivation='None' name='[none:Ciudad:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nombre y Apellidos]' derivation='None' name='[none:Nombre y Apellidos:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1plril6127yh1216qshl30ggvtze].[none:CCAA:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:CCAA:nk]' member='%null%' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Andalucía&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Aragón&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Canarias&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Cantabria&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Castilla y León&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Castilla-La Mancha&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Cataluña&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Comunidad de Madrid&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Comunidad Valenciana&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Extremadura&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Galicia&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Islas Baleares&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;La Rioja&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;País Vasco&quot;' />
+              <groupfilter function='member' level='[none:CCAA:nk]' member='&quot;Región de Murcia&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1plril6127yh1216qshl30ggvtze].[none:CCAA:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1plril6127yh1216qshl30ggvtze].[none:CCAA:nk]' value='88' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1plril6127yh1216qshl30ggvtze].[none:Ciudad:nk]' />
+              <lod column='[federated.1plril6127yh1216qshl30ggvtze].[none:Nombre y Apellidos:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5492265224456787' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1plril6127yh1216qshl30ggvtze].[none:CCAA:nk]</cols>
+      </table>
+      <simple-id uuid='{FF66BDE4-AEC2-48B9-9D06-8D73F7C0922D}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Isotype Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1plril6127yh1216qshl30ggvtze].[none:Ciudad:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1plril6127yh1216qshl30ggvtze].[none:CCAA:nk]</field>
+            <field>[federated.1plril6127yh1216qshl30ggvtze].[none:Ciudad:nk]</field>
+            <field>[federated.1plril6127yh1216qshl30ggvtze].[none:Nombre y Apellidos:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{72AFCA35-DE2C-4663-8989-D0CB7DA85F0C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Isotype Chart' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

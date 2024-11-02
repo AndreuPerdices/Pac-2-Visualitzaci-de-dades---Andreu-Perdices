@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='PAC2VDHistograma' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='iovj-empleo-economico' inline='true' name='federated.0ub5sed1kjiw6j195imye0xmqcjz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='iovj-empleo-economico' name='textscan.0j93fl70axsa7a156jq3o0jexspd'>
+            <connection class='textscan' directory='C:/Users/aperd/Downloads' filename='iovj-empleo-economico.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0j93fl70axsa7a156jq3o0jexspd' name='iovj-empleo-economico.csv' table='[iovj-empleo-economico#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=';'>
+            <column datatype='string' name='Indicador' ordinal='0' />
+            <column datatype='integer' name='Periodo' ordinal='1' />
+            <column datatype='integer' name='Valor' ordinal='2' />
+            <column datatype='string' name='Categoría 1' ordinal='3' />
+            <column datatype='string' name='Categoría 1-Valor' ordinal='4' />
+            <column datatype='string' name='Categoría 2' ordinal='5' />
+            <column datatype='string' name='Categoría 2-Valor' ordinal='6' />
+            <column datatype='string' name='Categoría 3' ordinal='7' />
+            <column datatype='string' name='Categoría 3-Valor' ordinal='8' />
+            <column datatype='string' name='F10' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Indicador</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Indicador]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>Indicador</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Periodo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Periodo]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>Periodo</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Valor</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Valor]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>Valor</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categoría 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Categoría 1]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>Categoría 1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categoría 1-Valor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Categoría 1-Valor]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>Categoría 1-Valor</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categoría 2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Categoría 2]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>Categoría 2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categoría 2-Valor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Categoría 2-Valor]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>Categoría 2-Valor</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categoría 3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Categoría 3]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>Categoría 3</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categoría 3-Valor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Categoría 3-Valor]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>Categoría 3-Valor</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[iovj-empleo-economico.csv]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='iovj-empleo-economico.csv' datatype='table' name='[__tableau_internal_object_id__].[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/aperd/AppData/Local/Temp/TableauTemp/#TableauTemp_10s79850q0c46a1e3b1kb01z3g7v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/02/2024 08:50:35 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Indicador</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Indicador]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Indicador</remote-alias>
+              <ordinal>0</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Periodo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Periodo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Periodo</remote-alias>
+              <ordinal>1</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Valor</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Valor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Valor</remote-alias>
+              <ordinal>2</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1241</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Categoría 1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Categoría 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Categoría 1</remote-alias>
+              <ordinal>3</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Categoría 1-Valor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Categoría 1-Valor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Categoría 1-Valor</remote-alias>
+              <ordinal>4</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Categoría 2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Categoría 2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Categoría 2</remote-alias>
+              <ordinal>5</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Categoría 2-Valor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Categoría 2-Valor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Categoría 2-Valor</remote-alias>
+              <ordinal>6</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Categoría 3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Categoría 3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Categoría 3</remote-alias>
+              <ordinal>7</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Categoría 3-Valor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Categoría 3-Valor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Categoría 3-Valor</remote-alias>
+              <ordinal>8</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F10</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F10</remote-alias>
+              <ordinal>9</ordinal>
+              <family>iovj-empleo-economico.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='iovj-empleo-economico.csv' id='iovj-empleo-economico.csv_E4D8EDE8A94D4ABD93A5E0286D1DFB9F'>
+            <properties context=''>
+              <relation connection='textscan.0j93fl70axsa7a156jq3o0jexspd' name='iovj-empleo-economico.csv' table='[iovj-empleo-economico#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=';'>
+                  <column datatype='string' name='Indicador' ordinal='0' />
+                  <column datatype='integer' name='Periodo' ordinal='1' />
+                  <column datatype='integer' name='Valor' ordinal='2' />
+                  <column datatype='string' name='Categoría 1' ordinal='3' />
+                  <column datatype='string' name='Categoría 1-Valor' ordinal='4' />
+                  <column datatype='string' name='Categoría 2' ordinal='5' />
+                  <column datatype='string' name='Categoría 2-Valor' ordinal='6' />
+                  <column datatype='string' name='Categoría 3' ordinal='7' />
+                  <column datatype='string' name='Categoría 3-Valor' ordinal='8' />
+                  <column datatype='string' name='F10' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Histograma'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='iovj-empleo-economico' name='federated.0ub5sed1kjiw6j195imye0xmqcjz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ub5sed1kjiw6j195imye0xmqcjz'>
+            <column datatype='string' name='[Categoría 1-Valor]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Categoría 2-Valor]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Periodo]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Valor]' role='measure' type='quantitative' />
+            <column-instance column='[Categoría 1-Valor]' derivation='None' name='[none:Categoría 1-Valor:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Categoría 2-Valor]' derivation='None' name='[none:Categoría 2-Valor:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Periodo]' derivation='None' name='[none:Periodo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Valor]' derivation='Sum' name='[sum:Valor:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ub5sed1kjiw6j195imye0xmqcjz].[none:Categoría 1-Valor:nk]'>
+            <groupfilter function='member' level='[none:Categoría 1-Valor:nk]' member='&quot;Mortal&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0ub5sed1kjiw6j195imye0xmqcjz].[none:Periodo:qk]' included-values='in-range'>
+            <min>2001</min>
+            <max>2022</max>
+          </filter>
+          <slices>
+            <column>[federated.0ub5sed1kjiw6j195imye0xmqcjz].[none:Categoría 1-Valor:nk]</column>
+            <column>[federated.0ub5sed1kjiw6j195imye0xmqcjz].[none:Periodo:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0ub5sed1kjiw6j195imye0xmqcjz].[sum:Valor:qk]</rows>
+        <cols>[federated.0ub5sed1kjiw6j195imye0xmqcjz].[none:Categoría 2-Valor:nk]</cols>
+      </table>
+      <simple-id uuid='{D8D5FF96-BFE6-4836-BF38-D6EA1BD927BD}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Histograma'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ub5sed1kjiw6j195imye0xmqcjz].[none:Categoría 1-Valor:nk]</field>
+            <field>[federated.0ub5sed1kjiw6j195imye0xmqcjz].[none:Categoría 2-Valor:nk]</field>
+            <field>[federated.0ub5sed1kjiw6j195imye0xmqcjz].[none:Periodo:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{918E738E-0695-4815-9826-6C93227DD82A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Histograma' width='192'>
+      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
+      mgQgbO0/ACSJSBRucFngAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
